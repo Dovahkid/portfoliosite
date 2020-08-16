@@ -3,7 +3,9 @@
 <ul *ngIf="repos">
     <li *ngFor="let repo of repos">
         <p class="name"> {{repo.name}} </p>
+        <p class="language">Primary language {{repo.language}}</p>
         <p class="description"> {{repo.description}} </p>
-        <p>Check out the repo  <a  class="svn_url" href={{repo.svn_url}} target="_blank">here </a></p>
+        <a *ngIf="repo.homepage" href={{repo.homepage}} class="homepage" target="_blank">Check out the website here</a>
+        <a class="svn_url"  href={{repo.svn_url}} target="_blank">Check out the repo here </a>
     </li>
 </ul>

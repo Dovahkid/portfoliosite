@@ -1,35 +1,50 @@
+$primary: rgb(0, 150, 255);
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    color: black;
 
     li {
-        background-color: lightgray;
+        background: lightgray;
         padding: 1em;
-        margin-right: 1em;
+        margin-right: 10px;
         width: 20%;
         height: 200px;
         margin-bottom: 1em;
         display: flex;
         flex-direction: column;
+        border-radius:5px;
         
         p {
             margin: 0;
         }
 
-        .name {
-            color: black;
-            font-size: 20px;
+        p.name {
+            font-weight: bold;
+            font-size: 1.2rem;
         }
-        .description {
-            color: black;
-            font-size: 15px;
+        p.description {
+            font-size: .9rem;
+            flex-grow: 1;
         }
-        .svn_url {
+        .language {
+            font-size:0.7rem;
+            margin-bottom:1em;
+        }
+        .svn_url, .homepage {
+            font-size:1rem;
             text-decoration: none;
-            color: blue;
+            color: $primary;
+
+            &:hover {
+                color: darken($primary, 5%);
+            }
+
         }
+        
     } 
 }

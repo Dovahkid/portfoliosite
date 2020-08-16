@@ -15,8 +15,10 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
 
     this._http.getRepos().subscribe(data => {
+
       this.repos = data;
       console.log(this.repos);
+
     });
 
   }
