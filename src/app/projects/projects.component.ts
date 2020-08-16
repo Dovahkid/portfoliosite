@@ -8,11 +8,16 @@ import { HttpService } from '../http.service';
 })
 export class ProjectsComponent implements OnInit {
 
+  repos: Object;
 
-  constructor(private _HttpService: HttpService) { }
+  constructor(private _http: HttpService) { }
 
   ngOnInit(): void {
 
+    this._http.getRepos().subscribe(data => {
+      this.repos = data;
+      console.log(this.repos);
+    });
 
   }
 

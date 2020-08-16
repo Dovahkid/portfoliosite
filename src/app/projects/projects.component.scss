@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        background-color: lightgray;
+        padding: 1em;
+        margin-right: 1em;
+        width: 20%;
+        height: 200px;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            margin: 0;
+        }
+
+        .name {
+            color: black;
+            font-size: 20px;
+        }
+        .description {
+            color: black;
+            font-size: 15px;
+        }
+        .svn_url {
+            text-decoration: none;
+            color: blue;
+        }
+    } 
+}

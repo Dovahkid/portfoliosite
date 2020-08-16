@@ -1,1 +1,9 @@
 <h1>Projects</h1>
+
+<ul *ngIf="repos">
+    <li *ngFor="let repo of repos">
+        <p class="name"> {{repo.name}} </p>
+        <p class="description"> {{repo.description}} </p>
+        <p>Check out the repo  <a  class="svn_url" href={{repo.svn_url}} target="_blank">here </a></p>
+    </li>
+</ul>

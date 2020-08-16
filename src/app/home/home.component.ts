@@ -7,25 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  clickCounter: number = 0;
-  name: string = "";
+  // clickCounter: number = 0;
+  // name: string = "";
+  // countClick()
+  // {
+  //   this.clickCounter += 1;
+  // }
+  
+  // setClasses(){
+  //   let myClass = {
+  //     active: this.clickCounter > 4,
+  //     notactive: this.clickCounter <= 4,
+  //   }
+  //   return myClass;
+  // }
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  countClick()
-  {
-    this.clickCounter += 1;
-  }
-  
-  setClasses(){
-    let myClass = {
-      active: this.clickCounter > 4,
-      notactive: this.clickCounter <= 4,
-    }
-    return myClass;
-  }
-
 }
